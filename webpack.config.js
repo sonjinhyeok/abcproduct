@@ -1,29 +1,18 @@
+// pathモジュールを読み(output.pathに絶対パスを指定するため)
+const path = require('path');
+
 module.exports = {
-    // モード値を production に設定すると最適化された状態で、
-    // development に設定するとソースマップ有効でJSファイルが出力される
+    // モードの設定。指定可能な値は、none, development ,production（デフォルト）
+    // https://webpack.js.org/concepts/mode/#mode-development
     mode: 'development',
-  
-    // メインとなるJavaScriptファイル（エントリーポイント）
-    entry: './src/main.ts',
-  
-    module: {
-      rules: [
-        {
-          // 拡張子 .ts の場合
-          test: /\.ts$/,
-          // TypeScript をコンパイルする
-          use: 'ts-loader',
-        },
-      ],
-    },
-    // import 文で .ts ファイルを解決するため
-    // これを定義しないと import 文で拡張子を書く必要が生まれる。
-    // フロントエンドの開発では拡張子を省略することが多いので、
-    // 記載したほうがトラブルに巻き込まれにくい。
-    resolve: {
-      // 拡張子を配列で指定
-      extensions: [
-        '.ts', '.js',
-      ],
-    },
-  };
+    // アプリケーションが実行を開始されるポイント(エントリーポイント)
+    // 配列で指定すると、すべての項目が実行される
+    // https://webpack.js.org/configuration/entry-context/#entry
+    entry: './src/js/app.js',
+    output: {
+        filename: 'bundle.js',
+        // ビルド後のファイルが出力される"絶対パス"ディレクトリ
+        // https://webpack.js.org/configuration/output/#outputpath
+        path: path.join(__dirname, 'public/js')
+    }
+};
