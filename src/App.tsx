@@ -25,8 +25,6 @@ function App() {
               <div className="sub_content_item">コンテンツ2</div>  
             </div>
         </div>
-      {/* Footer */}
-        <div className="footer">ABCProduct Co. Ltd.</div>
     </body>
   );
   

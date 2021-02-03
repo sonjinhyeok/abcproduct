@@ -1,6 +1,7 @@
 * {
     margin: 0;
 }
+/* Header */
 .header {
     background: gray;
     width: 100vw;
@@ -10,6 +11,8 @@
     font-size: 35px;
     color:whitesmoke
 }
+
+/* Sidebar */
 .sidenav_bar {
     float: left;
     text-align: center;
@@ -21,9 +24,12 @@
     color: whitesmoke;
 
 }
+.sidenav_bar a {
+    text-decoration: none;
+}
 .sidenav_bar_menu {
     list-style: none;
-    width: 100%;
+    width: 15vw;
     height: 80px;
     line-height: 80px;
     color: whitesmoke;
@@ -31,6 +37,7 @@
 .sidenav_bar_menu:hover {
     background: orange;
 }
+/* Content */
 .main_content{
     width: 85vw;
     height: 90vh;
@@ -48,6 +55,7 @@
     text-align: center;
     line-height: 300px;
 }
+/* Sub Content */
 .sub_content_item{
     width: 900px;
     height: 100px;
@@ -56,5 +64,61 @@
     background-color: #66b6d5;
     text-align: center;
 }
+/* Table */
+.itemtable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 1400px;
+    color: black;
+}
 
+td, th {
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: gray;
+}
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+.page{
+    
+}
+
+/* Search bar */
+.search_item {
+    margin-top: 150px;
+    width: 700px;
+    text-align: center;
+}
+
+select {
+    width: 100px;
+    font-size: 25px;
+}
+
+input.keyword {
+    width: 400px;
+    font-size: 25px;
+}
+.button { 
+    width: 100px;
+    font-size: 25px;
+}
+
+
+
+/* footer */
+.footer {
+    text-align: center;
+    background: lightslategray;
+    color: whitesmoke;
+    width: 100vw;
+    height: 5vh;
+
+}
 
