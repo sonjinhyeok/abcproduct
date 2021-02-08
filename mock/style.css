@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     outline: none;
-    border:none;
+    
 }
 
 a {
@@ -178,7 +178,7 @@ tr:nth-child(odd) {
     line-height: 43px;
     font-size: 24px;
     background-color:whitesmoke;
-    
+    border:none;
 }
 
 .content {
