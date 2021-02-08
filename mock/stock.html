@@ -2,108 +2,119 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>ABCProduct</title>
-<style>
-    
-</style>
+    <title>ABCProdudt</title>
 </head>
 <body>
-    <div id="wrap">
-        <header>
-            <h1 class="header-title">ABCProduct</h1>
-        </header>
-        <aside>
-            <ul class="side-menu">
-                <li class="side-menu-list">
-                    <a href="index.html"><i class="fas fa-home"></i>ホーム</a>
+    <header class="header">
+        <h1 class="header-title">ABCProduct</h1>
+    </header>
+    <section class="container">
+        <aside class="aside">
+            <ul class="aside-menu">
+                <li>
+                    <a href="index.html">
+                        <span class="aside-menu-icon"><i class="fas fa-home"></i></span>
+                            <span class="aside-menu-text">ホーム</span>
+                    </a>
                 </li>
-                <li class="side-menu-list">
-                    <a href="#"><i class="fas fa-list"></i>在庫管理</a>
-                </li>    
-                <li class="side-menu-list">
-                    <a href="order.html"><i class="fas fa-clipboard"></i>受注管理</a>
-                </li>        
-            </ul>
+                <li>
+                    <a href="#">
+                        <span class="aside-menu-icon"><i class="fas fa-list"></i></span>
+                            <span class="aside-menu-text">在庫管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="order.html">
+                        <span class="aside-menu-icon"><i class="fas fa-clipboard"></i></span>
+                            <span class="aside-menu-text">受注管理</span>
+                    </a>
+                </li>
+            </ul>   
         </aside>
-        <section>
-            <div class="main-content">
-                <div class="order-content">
-                    <div class="search-container">
-                        <input type="search" placeholder="キーワードを入力してください" name="search">
-                        <button type="submit">検索</button>
-                    </div>
-                <div class="list-table-container">
-                    <table class="list-table" border="1">
-                        <tr>
-                            <th>ID</th>
-                            <th>商品名</th>
-                            <th>商品数</th>
-                            <th>単価</th>
-                            <th>倉庫名</th>
-                            <th>詳細</th>
-                            <th>削除</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>abc</td>
-                            <td>3</td>
-                            <td>100</td>
-                            <td>東京倉庫</td>
-                            <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                        </tr>   
-                    </table>
-                </div>
-                <div class="page-btn">
-                    <button class="btn-num">前</button>
-                    <button class="btn-num">1</button>
-                    <button class="btn-num">2</button>
-                    <button class="btn-num">次</button>
-                </div>
-                <div class="stock-page">
-                    <button class="stock-page-btn">在庫登録</button>
-                </div>
-            </div>
+        <section class="section">
+            <!-- Search-bar -->
+            <section class="search-bar">
+                <input type="search" name="search" class="search-bar-text" placeholder="キーワードを入力してください。">
+                    <button class="search-bar-btn">検索</button>
+            </section>
+            <!-- Table -->
+            <section class="table">
+                <table class="list-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>商品名</th>
+                        <th>商品数</th>
+                        <th>単価</th>
+                        <th>倉庫名</th>
+                        <th>詳細</th>
+                        <th>削除</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>abc</td>
+                        <td>3</td>
+                        <td>100</td>
+                        <td>東京倉庫</td>
+                        <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="#"><i class="far fa-trash-alt" ></i></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>   
+                </table>
+            </section>
         </section>
-    </div>
+        <!-- Page Num & Button -->
+        <section class="content">
+            <div class="page-btn">
+                <button class="btn-num">前</button>
+                <button class="btn-num">１</button>
+                <button class="btn-num">２</button>
+                <button class="btn-num">次</button>
+            </div>
+            <button class="stock-btn">在庫登録</button>
+        </section>
+        <footer class="footer">
+            <div class="footer-text">Axas</div>
+        </footer>
+    </section>    
 </body>
 </html>
