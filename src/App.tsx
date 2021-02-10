@@ -1,33 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
+import { Person } from './Person'
 
 function App() {
-  
   return (
-    <body>
-      <div className="header">
-        <h1>ABCProduct</h1>
-      </div>
-      {/* Side menu */}
-        <div className="sidenav">
-          <ul className="sidenav_bar">
-            <li className="sidenav_bar_menu">ホーム</li>
-            <li className="sidenav_bar_menu">在庫管理</li>
-            <li className="sidenav_bar_menu">受注管理</li>
-          </ul>
-        </div>
-      {/* Main */}
-        <div className="main_content">
-          <div className="main_content_item">在庫管理へ</div>
-          <div className="main_content_item">在庫管理へ</div>
-            <div className="sub_content">
-              <div className="sub_content_item">コンテンツ1</div>
-              <div className="sub_content_item">コンテンツ2</div>  
-            </div>
-        </div>
-    </body>
+    <div className="App">
+      <Person name={"KIM"} age={26}/>
+      <Person name={"John"} age={20}/>
+      <Person name={"James"} age={35}/>
+    </div>
   );
-  
 }
+
 export default App;
 

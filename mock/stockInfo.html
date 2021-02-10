@@ -28,7 +28,7 @@
                             <span class="aside-menu-text">在庫管理</span>
                     </a>
                 </li>
-                <li style="background-color : sandybrown">
+                <li>
                     <a href="order.html">
                         <span class="aside-menu-icon"><i class="fas fa-clipboard"></i></span>
                             <span class="aside-menu-text">受注管理</span>
@@ -39,46 +39,39 @@
         <section class="section">
             <!-- Search-bar -->
             <section class="search-bar">
-                <h1>受注登録</h1>
+                <h1>在庫（詳細ページ）</h1>
             </section>
             <!-- Table -->
             <section class="table">
                 <table class="stock-table">
-                    
                     <tr>
                         <td>ID</td>
-                        <td>
-                            <input type="text" name="text" class="stock-text"
-                            placeholder="入力してください" >
-                        </td>                        
+                        <td class="stock-width-td">１</td>                
                     </tr>
                     <tr>
                         <td>商品名</td>
-                        <td><input type="text" name="text" class="stock-text"></td>
+                        <td>abc</td>
+                        
                     </tr>
                     <tr>
                         <td>商品数</td>
-                        <td><input type="text" name="text" class="stock-text"></td>
+                        <td>3</td>
                     </tr>
                     <tr>
                         <td>単価</td>
-                        <td><input type="text" name="text" class="stock-text"></td>
+                        <td>100</td>
                     </tr>
                     <tr>
-                        <td>・・・</td>
-                        <td><input type="text" name="text" class="stock-text"></td>
-                    </tr>
-                    <tr>
-                        <td>・・・</td>
-                        <td><input type="text" name="text" class="stock-text"></td>
+                        <td>倉庫名</td>
+                        <td>東京倉庫</td>
                     </tr>
                 </table>
             </section>
         </section>
         <!-- Page Num & Button -->
         <section class="content">
-            <a href="#"><button class="stock-btn">登録</button></a>
-            <a href="order.html"><button class="stock-cancel-btn">キャンセル</button></a>
+            <button class="stock-delete-btn">削除</button>
+            <a href="stock.html"><button class="stock-cancel-btn">閉じる</button></a>
         </section>
         <footer class="footer">
             <div class="footer-text">Axas Co</div>

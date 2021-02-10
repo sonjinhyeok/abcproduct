@@ -6,8 +6,9 @@
     
 }
 
-a {
-    color: whitesmoke;
+a { 
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
@@ -55,6 +56,10 @@ header {
     text-align: center;
 }
 
+.aside-menu a {
+    color: white;
+}
+
 .aside-menu li { 
     padding: 20px;
     font-size: 30px;
@@ -66,7 +71,7 @@ header {
 }
 
 .container {
-    height: 850px;
+    height: 100v;
 }
 
 .section {
@@ -82,8 +87,9 @@ header {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 250px;
+    height: 200px;
     margin: 10px;
+    
     border:1px solid black;
     border-radius: 10px;
     text-align: center;
@@ -91,7 +97,7 @@ header {
 }
 
 .icon-box-img {
-    font-size: 120px;
+    font-size: 100px;
 }
 
 .icon-box a {
@@ -152,10 +158,11 @@ header {
     font-size: 24px;
     margin: 0 20px;
     text-align: center;
+    
 }
 
-.list-table i {
-    color: black;
+.list-table a {
+    padding: 4px 20px;
 }
 
 tr:nth-child(even) {
@@ -179,6 +186,10 @@ tr:nth-child(odd) {
     font-size: 24px;
     background-color:whitesmoke;
     border:none;
+}
+
+.stock-width-td {
+    width: 70%;
 }
 
 .content {
@@ -214,8 +225,7 @@ tr:nth-child(odd) {
     margin-right: 20px;
     height: 50px;
     width: 150px;
-    border-radius: 4px;
-    
+    border-radius: 4px;  
 }
 .stock-cancel-btn{
     margin-right: 20px;
@@ -231,6 +241,24 @@ tr:nth-child(odd) {
     background-color: sandybrown;
     color: white;
 }
+
+.stock-delete-btn {
+    margin-right: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 4px;
+    background-color: red;
+    border-radius: 4px;
+    color: whtie;
+}
+
+.stock-delete-btn:hover {
+    background-color: white;
+    color: red;
+    border:1px solid red;
+}
+
+
 .footer {
     line-height: 50px;
     height: 50px;
