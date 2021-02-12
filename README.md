@@ -1,1 +1,3 @@
 # abcproduct
+
+Masterブランチを使っております。
