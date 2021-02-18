@@ -64,7 +64,6 @@ function reducer(state = initialState, action) {
       return state;
   }
 }
-
 /* ストアを作る */
 const store = createStore(reducer);
 
@@ -77,7 +76,6 @@ const listener = () => {
 };
 
 const unsubscribe = store.subscribe(listener);
-// 구독을 해제하고 싶을 때는 unsubscribe() 를 호출하면 됩니다.
 
 // actionを dispatch する
 store.dispatch(increase());

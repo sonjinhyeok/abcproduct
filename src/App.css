@@ -1,0 +1,40 @@
+button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.count-number {
+    margin-left: 10px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+.count-button {
+    margin-left: 10px;
+    font-size: 20px;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: ease-in 300ms;
+}
+
+.count-button:hover {
+    color: white;
+    background-color: black;
+}
+
+.decrease {
+    color: red;
+    border: 1px solid red;
+}
+
+.decrease:hover {
+    color: white;
+    background-color: red;
+}
